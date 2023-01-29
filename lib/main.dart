@@ -25,6 +25,7 @@ class Home extends StatelessWidget {
       ),
       drawer: new Drawer(
         child: ListView(
+          // listing the contents of the side menu bar
           children: <Widget>[
             new UserAccountsDrawerHeader(
               accountName: new Text('Trump'),
@@ -34,6 +35,7 @@ class Home extends StatelessWidget {
                       new NetworkImage("https://i.pravatar.cc/300 ")),
             ),
             new ListTile(
+              // button to direct to the next page
               title: Text('Next Page'),
               onTap: () {
                 Navigator.of(context).pop();
